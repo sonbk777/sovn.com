@@ -51,7 +51,7 @@ func (dest *HugoProduct) mapPonzuProduct(
 func main() {
     ponzuHostURL, ok := os.LookupEnv("PONZU_HOST_URL")
     if !ok || ponzuHostURL == "" {
-        
+        ponzuHostURL = "http://localhost"
     }
     var productsEndpoint = ponzuHostURL + "/api/contents?type=Product"
     
