@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-chmod 744 ./build.sh
+chmod a+x ./build.sh && ./build.sh
 
 go build -o ./ponzuImport ./ponzuImport.go
 
